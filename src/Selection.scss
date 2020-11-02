@@ -6,17 +6,48 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 0.5px solid #7d7e91;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
+    pointer-events: none;
+            
+
+    .select__layer {
+        width: 18vw;
+        height: 20vh;
+        background: red;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        border-radius: 5px;
+        position: absolute;
+        z-index: 2;
+        opacity: 0;
+        pointer-events: all;
+        transition-duration: 0.25s;
+        filter: brightness(70%);
+        cursor: pointer;
+    }
 
     .select__logo {
         width: 14vw;
         height: 16vh;
         object-fit: contain;
+        z-index: 3;
+        pointer-events: none;
 
         img {
             width: 14vw;
             height: 16vh;
             object-fit: contain;
+            pointer-events: none;
         }
     }
     
+}
+
+.select__layer:hover {
+    
+    opacity: 1;
 }

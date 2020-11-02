@@ -42,7 +42,7 @@ function Row({ title, fetchURL, isLargeRow }) {
 
     return (
         <div className="rows">
-            <h2 className="row__title">{title}</h2>
+            <h2 className="row__title">{title === 'NETFLIX ORIGINALS' ? 'DISNEY ORIGINALS' : title}</h2>
             
 
             <div className="row__posters">
@@ -51,7 +51,7 @@ function Row({ title, fetchURL, isLargeRow }) {
                     key={movie.id}
                     /*onClick={() => handleClick(movie)}*/
                     className={`row__poster ${isLargeRow && "row__posterLarge"}`}
-                    src={`${base_url}${ isLargeRow ? movie.poster_path : movie.backdrop_path}`} alt={movie.name}/>
+                    src={`${base_url}${ isLargeRow ? movie.backdrop_path : movie.backdrop_path}`} alt={movie.name}/>
                 ))
                 }
             </div>

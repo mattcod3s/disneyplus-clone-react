@@ -4,11 +4,13 @@ import requests from './requests';
 import './main.scss';
 import Banner from './Banner';
 import Categories from './Categories';
+import NavBar from './Nav';
 
 
 function App() {
   return (
     <div className="App">
+      <NavBar />
       <Banner />
       <Categories />
       <div className="app__rows">

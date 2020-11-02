@@ -28,11 +28,11 @@ function Banner() {
 
     let items = [
        
-        {src: 'https://a-static.besthdwallpaper.com/iron-man-3-movie-poster-wallpaper-2560x1080-11921_14.jpg'},
-        {src: 'https://i.imgur.com/GXV34ev.jpg'},
+        {src: 'https://s3.eu-west-2.amazonaws.com/media.rosetheatrekingston.org/images/shows/2015/One%20Nighters/Frozen%20web%20image(1).jpg'},
+        {src: 'https://vignette2.wikia.nocookie.net/disney/images/5/5e/Spider-Man_Homecoming_Banner.png/revision/latest?cb=20161209053619'},
         {src: 'https://static.wikia.nocookie.net/starwars/images/0/00/TheMandalorianSeasonTwoLogo.png/revision/latest?cb=20200904032456'},
         {src: 'https://www.monsterhunter.com/world-iceborne/assets/img/common/common/bnr_mh-movie01_en.jpg'},
-        {src: 'https://asset-manager.bbcchannels.com/i/2fl7w1a40go1000'}
+        {src: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5298bac0-b8bf-4c80-af67-725c1272dbb0/dbqqb0j-a1b7ea16-a3b1-47b5-b7dd-aef5fa233f84.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNTI5OGJhYzAtYjhiZi00YzgwLWFmNjctNzI1YzEyNzJkYmIwXC9kYnFxYjBqLWExYjdlYTE2LWEzYjEtNDdiNS1iN2RkLWFlZjVmYTIzM2Y4NC5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.kf66lt1I4Xl_lmLBEhiH3_1v9G_ODWu68zONRWbXahk'}
        
     ]; 
 
@@ -70,8 +70,8 @@ function Banner() {
             ssr={true} // means to render carousel on server-side.
             infinite={true}
             autoPlay={true}
-            autoPlaySpeed={5000}
-            showDots={true}
+            autoPlaySpeed={2500}
+            showDots={false}
             className="banner__posters"
             afterChange={(previousSlide, { currentSlide, onMove }) => {
                 if (currentSlide === 8) {

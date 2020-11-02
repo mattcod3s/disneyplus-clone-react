@@ -3,7 +3,7 @@ import './CarouselItem.scss';
 
 function CarouselItem({ imgSrc , nameOfClass , isCurrent}) {
     return (
-        <div className={`carouselItem ${isCurrent && "currentSlide"}`} >
+        <div className={`carouselItem ${isCurrent ? "" : "currentSlide"}`} >
             <img src={imgSrc} />
         </div>
     )
