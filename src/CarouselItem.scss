@@ -1,0 +1,53 @@
+/*.carouselItem {
+    width:90vw;
+    height: 48vh;
+    background: transparent;
+    display: flex;
+    border-radius: 3px;
+    
+
+    img {
+        position: absolute;
+        bottom: 1vh;
+        width: 86vw;
+        height: 49vh;
+        border-radius: 3px;
+        margin: 0 1vw 0 1vw;
+    }
+}*/
+
+/*
+.carouselItem {
+    
+
+    img {
+        width: 88vw;
+        max-height: 48vh !important;
+        min-height: 48vh !important;
+    }
+}
+*/
+
+.carouselItem {
+    width: 74vw;
+    height: 50vh;
+    margin: 0 3vw 0 3vw;
+
+    img {
+        position: absolute;
+        top: 1vh;
+        width: 74vw;
+        height: 49vh;
+        border-radius: 3px;
+    }
+}
+
+.currentSlide {
+    border: 3px solid red;
+}
+
+.carouselItem:nth-child(1) { order: 1; }
+.carouselItem:nth-child(2) { order: 2; }
+.carouselItem:nth-child(3) { order: 3; }
+.carouselItem:nth-child(4) { order: 4; }
+.carouselItem:nth-child(5) { order: 5; }

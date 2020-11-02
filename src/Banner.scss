@@ -1,0 +1,58 @@
+/*.banner {
+    height: 50vh;
+    width: 450vw;
+    background: transparent;
+    display: flex;
+    margin-left: -174vw;
+
+    .banner__posters {
+        display: flex;
+        width: 450vw;
+        display: flex;
+        align-items: row;
+        position: absolute;
+        top: 4vh;
+        justify-content: space-around;
+    }
+}
+*/
+/*
+.banner {
+    width: 90vw;
+    max-height: 50vh !important;
+    min-height: 50vh !important;
+    
+
+    .banner__posters {
+        position: absolute;
+        top: 2vh;
+        width: 88vw;
+        max-height: 48vh !important;
+        min-height: 48vh !important;
+        margin-left: 6vw;
+        border-radius: 4px;
+
+        .next {
+            width: 88vw;
+            max-height: 48vh !important;
+            min-height: 48vh !important;
+        }
+        .prev {
+            width: 88vw;
+            max-height: 48vh !important;
+            min-height: 48vh !important;
+        }
+    }
+}
+*/
+
+.banner {
+    width: 400vw;
+    height: 50vh;
+    margin-left: -150vw;
+    
+    .banner__posters {
+        width: 400vw;
+        height: 50vh;
+    }
+}

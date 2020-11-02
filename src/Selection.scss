@@ -1,0 +1,22 @@
+.select-box {
+    width: 18vw;
+    height: 20vh;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #363745 0%, #262733 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .select__logo {
+        width: 14vw;
+        height: 16vh;
+        object-fit: contain;
+
+        img {
+            width: 14vw;
+            height: 16vh;
+            object-fit: contain;
+        }
+    }
+    
+}
