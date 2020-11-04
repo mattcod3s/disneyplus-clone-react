@@ -12,27 +12,141 @@
     transition-timing-function: ease-in;
     transition: all .5s;
 
-    .nav__logo {
-        position: fixed;
-        left: 20px;
-        width: 6vw;
-        object-fit: contain;
-        margin-top: -2vh;
+    .nav__left {
+        width: 7vw;
+
+        .nav__logo {
+            position: fixed;
+            left: 20px;
+            width: 6vw;
+            object-fit: contain;
+            margin-top: -2vh;
+        }
+    }
+
+    .nav__center {
+        width: 78vw;
+        display: flex;
+        flex-direction: row;
+        margin-top: -1.5vh;
+        opacity: 0;
+        transition-duration: 0.2s;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+
+            li {
+                width: 9vw;
+                color: white;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+
+                .nav__icon {
+                    font-size: 1rem;
+                    margin: 0 1vw 0 0;
+                }
+
+                .nav__text {
+                    font-size: 0.8rem;
+                    font-weight: 300;
+                    letter-spacing: 0.1vw;
+                }
+            }
+        }
+    }
+    .nav_blue {
+        opacity: 1 !important;
     }
 
     
+    .nav__right {
+        width: 15vw;
+        display: flex;
 
-    .netflix__avatar {
-        position: fixed;
-        right: 30px;
-        width: 45px;
-        object-fit: contain;
-        cursor: pointer;
-        border-radius: 50px;
+        .netflix__avatar {
+            position: fixed;
+            right: 30px;
+            width: 45px;
+            object-fit: contain;
+            cursor: pointer;
+            border-radius: 50px;
+            margin-top: -1.5vh;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 1025px) {
+    .nav__left {
+        width: 12vw;
+
+        .nav__logo {
+            position: fixed;
+            left: 20px;
+            width: 50px !important;
+            object-fit: contain;
+            margin-top: 0px !important;
+        }
+    }
+
+    .nav__center {
+        width: 73vw;
+        display: flex;
+        flex-direction: row;
         margin-top: -1.5vh;
+        opacity: 0;
+        transition-duration: 0.2s;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+
+            li {
+                width: 9vw;
+                color: white;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+
+                .nav__icon {
+                    font-size: 1rem !important;
+                    margin: 0 1vw 0 0;
+                }
+
+                .nav__text {
+                    font-size: 0.4rem !important;
+                    font-weight: 300;
+                    letter-spacing: 0.1vw;
+                    display: none;
+                }
+            }
+        }
+    }
+    .nav_blue {
+        opacity: 1 !important;
+    }
+
+    
+    .nav__right {
+        width: 15vw;
+        display: flex;
+
+        .netflix__avatar {
+            position: fixed;
+            right: 30px;
+            width: 35px;
+            object-fit: contain;
+            cursor: pointer;
+            border-radius: 50px;
+            margin-top: -1.5vh;
+        }
     }
 }
 
 .nav_black {
-    background-color: #171925 !important;
+    background-color: #101120 !important;
 }

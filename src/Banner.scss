@@ -47,12 +47,33 @@
 */
 
 .banner {
-    width: 450vw;
-    height: 50vh;
-    margin-left: -175vw;
+    width: /*450vw*/100vw;
+    height: 25vw;
+    margin-left: /*-175vw*/0;
+    overflow-x: hidden !important; //horizontal
+    overflow-y: scroll; //vertical
     
     .banner__posters {
-        width: 450vw;
-        height: 41vh;
+        width: /*450vw*/100vw;
+        overflow-x: hidden !important; //horizontal
+        overflow-y: scroll; //vertical
+        height: 25vw;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .banner {
+        width: /*450vw*/100vw;
+        height: 50vw;
+        margin-left: /*-175vw*/0;
+        overflow-x: hidden !important; //horizontal
+        overflow-y: scroll; //vertical
+        
+        .banner__posters {
+            width: /*450vw*/100vw;
+            overflow-x: hidden !important; //horizontal
+            overflow-y: scroll; //vertical
+            height: 50vw;
+        }
     }
 }

@@ -1,6 +1,7 @@
 body {
-    background-color: #171925;
-    overflow-x: hidden;
+    background: linear-gradient(180deg, #070C16 0%, #0A101C 100%);
+    overflow-x: hidden !important; //horizontal
+    overflow-y: scroll; //vertical
     font-family: sans-serif;
 }
 

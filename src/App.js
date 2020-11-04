@@ -5,6 +5,7 @@ import './main.scss';
 import Banner from './Banner';
 import Categories from './Categories';
 import NavBar from './Nav';
+import Footer from './Footer';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         < Row title="Romance Movies" fetchURL={requests.fetchRomanceMovies}/>
         < Row title="Documentaries" fetchURL={requests.fetchDocumentaries}/>
       </div>
+      < Footer/>
     </div>
   );
 }

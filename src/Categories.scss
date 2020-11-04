@@ -1,9 +1,11 @@
 .categories {
-    width: 100vw;
-    height: 20vh;
-    background-color: #171925;
+    width: 94vw;
+    height: 12vw;
+    background-color:transparent;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin: 0 3vw 0 3vw;
+    padding-top: 3vw;
 }

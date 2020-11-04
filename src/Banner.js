@@ -30,8 +30,8 @@ function Banner() {
        
         {src: 'https://s3.eu-west-2.amazonaws.com/media.rosetheatrekingston.org/images/shows/2015/One%20Nighters/Frozen%20web%20image(1).jpg'},
         {src: 'https://vignette2.wikia.nocookie.net/disney/images/5/5e/Spider-Man_Homecoming_Banner.png/revision/latest?cb=20161209053619'},
-        {src: 'https://static.wikia.nocookie.net/starwars/images/0/00/TheMandalorianSeasonTwoLogo.png/revision/latest?cb=20200904032456'},
-        {src: 'https://www.monsterhunter.com/world-iceborne/assets/img/common/common/bnr_mh-movie01_en.jpg'},
+        {src: 'https://pbs.twimg.com/media/EHRv5d_UUAEMUEk.jpg'},
+        {src: 'https://i.redd.it/ls1e260sgel21.jpg'},
         {src: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5298bac0-b8bf-4c80-af67-725c1272dbb0/dbqqb0j-a1b7ea16-a3b1-47b5-b7dd-aef5fa233f84.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNTI5OGJhYzAtYjhiZi00YzgwLWFmNjctNzI1YzEyNzJkYmIwXC9kYnFxYjBqLWExYjdlYTE2LWEzYjEtNDdiNS1iN2RkLWFlZjVmYTIzM2Y4NC5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.kf66lt1I4Xl_lmLBEhiH3_1v9G_ODWu68zONRWbXahk'}
        
     ]; 
@@ -39,19 +39,22 @@ function Banner() {
     const responsive = {
         desktop: {
           breakpoint: { max: 3000, min: 1024 },
-          items: 5,
-          slidesToSlide: 1 // optional, default to 1.
+          items: 1,
+          slidesToSlide: 1,
+          partialVisibilityGutter: 128 // optional, default to 1.
 
         },
         tablet: {
           breakpoint: { max: 1024, min: 464 },
-          items: 2,
-          slidesToSlide: 2 // optional, default to 1.
+          items: 1,
+          slidesToSlide: 1,
+          partialVisibilityGutter: 20 // optional, default to 1.
         },
         mobile: {
           breakpoint: { max: 464, min: 0 },
           items: 1,
-          slidesToSlide: 1 // optional, default to 1.
+          slidesToSlide: 1,
+          partialVisibilityGutter: 35 // optional, default to 1.
         }
       };
     
@@ -72,6 +75,8 @@ function Banner() {
             autoPlay={true}
             autoPlaySpeed={2500}
             showDots={false}
+            centerMode={false}
+            partialVisible={true}
             className="banner__posters"
             afterChange={(previousSlide, { currentSlide, onMove }) => {
                 if (currentSlide === 8) {
@@ -93,7 +98,7 @@ function Banner() {
                 nameOfClass={i} 
                 key={i} 
                 id={i} 
-                isCurrent={current === (i+3)  ? true : console.log(i+3)}/>  )
+                isCurrent={current === (i+2)  ? true : false}/>  )
                 }
                 
                 

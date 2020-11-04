@@ -1,21 +1,21 @@
 .select-box {
-    width: 18vw;
-    height: 20vh;
+    width: 17vw;
+    height: 10vw;
     border-radius: 5px;
-    background: linear-gradient(180deg, #363745 0%, #262733 100%);
+    background: linear-gradient(180deg, #242938 0%, #1B1C29 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     border: 0.5px solid #7d7e91;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-	   -moz-box-shadow: 0 8px 6px -6px black;
-            box-shadow: 0 8px 6px -6px black;
+    -webkit-box-shadow: 0 16px 12px -12px black;
+	   -moz-box-shadow: 0 16px 12px -12px black;
+            box-shadow: 0 16px 12px -12px black;
     pointer-events: none;
             
 
     .select__layer {
-        width: 18vw;
-        height: 20vh;
+        width: 17vw;
+        height: 10vw;
         background: red;
         align-items: center;
         justify-content: center;

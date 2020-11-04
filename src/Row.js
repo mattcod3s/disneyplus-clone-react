@@ -42,7 +42,7 @@ function Row({ title, fetchURL, isLargeRow }) {
 
     return (
         <div className="rows">
-            <h2 className="row__title">{title === 'NETFLIX ORIGINALS' ? 'DISNEY ORIGINALS' : title}</h2>
+            <h2 className="row__title">{title === 'NETFLIX ORIGINALS' ? 'Originals' : title}</h2>
             
 
             <div className="row__posters">
